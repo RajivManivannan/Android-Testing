@@ -1,4 +1,4 @@
-package com.reeuse.androidtesting.view.activities;
+package com.reeuse.androidtesting.view;
 
 /**
  * Created by Rajiv M.

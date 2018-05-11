@@ -1,10 +1,9 @@
 package com.reeuse.androidtesting.presenter;
 
 import android.os.Handler;
-import android.text.TextUtils;
 
 import com.reeuse.androidtesting.R;
-import com.reeuse.androidtesting.view.activities.LoginView;
+import com.reeuse.androidtesting.view.LoginView;
 
 
 /**
@@ -31,12 +30,9 @@ public class LoginPresenter {
             return;
         }
         loginView.showProgress();
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                loginView.hideProgress();
-                loginView.navigateToHome();
-            }
+        new Handler().postDelayed(() -> {
+            loginView.hideProgress();
+            loginView.navigateToHome();
         }, 3000); // delay 3 seconds
 
     }

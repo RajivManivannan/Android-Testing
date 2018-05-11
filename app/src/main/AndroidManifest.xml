@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.reeuse.androidtesting">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".app.AppApplication"
@@ -12,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.activities.LoginActivity"
+            android:name=".view.activity.LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.activities.HomeActivity"
+            android:name=".view.activity.HomeActivity"
             android:label="@string/title_activity_home" />
     </application>
 

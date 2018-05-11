@@ -6,19 +6,19 @@ import com.reeuse.androidtesting.BuildConfig;
 
 
 /**
- * Logger.java
+ * LoggerUtils.java
  * To get the different types of log in the application we can use this LogUtils class.
  * By default before creating the signed APK the application will be in debug-able mode
  * Once, you created the signed APK, SDK itself change to debug-able false.Since,we have
  * checked the condition BuildConfig.DEBUG and showing log.
  */
-public class Logger {
+public class LoggerUtils {
     private static final String LOG_PREFIX = "mvp_";
     private static final int LOG_PREFIX_LENGTH = LOG_PREFIX.length();
     private static final int MAX_LOG_TAG_LENGTH = 23;
 
     //Default constructor.
-    private Logger() {
+    private LoggerUtils() {
     }
 
     /**

@@ -58,7 +58,7 @@ jobs:
           #path: app/build/outputs/apk/
           #destination: apks/
      # - deploy:
-          #name: "Deploy to Fabric "
+          #name: Deploy to Fabric
           #command: #./gradlew assembleDebug crashlyticsUploadDistributionDebug --stacktrace --debug --no-daemon
                     #../gradlew assembleRelease crashlyticsUploadDistributionRelease --stacktrace --debug --no-daemon
 

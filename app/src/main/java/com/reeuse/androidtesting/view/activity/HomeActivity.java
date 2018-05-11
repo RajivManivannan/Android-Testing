@@ -1,4 +1,4 @@
-package com.reeuse.androidtesting.view.activities;
+package com.reeuse.androidtesting.view.activity;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -14,14 +14,6 @@ public class HomeActivity extends BaseActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
-
-
-
-
-
     }
 
 }

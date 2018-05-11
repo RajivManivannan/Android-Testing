@@ -1,8 +1,7 @@
 package com.reeuse.androidtesting.presenter;
 
 import com.reeuse.androidtesting.R;
-import com.reeuse.androidtesting.view.activities.LoginActivity;
-import com.reeuse.androidtesting.view.activities.LoginView;
+import com.reeuse.androidtesting.view.LoginView;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +9,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 

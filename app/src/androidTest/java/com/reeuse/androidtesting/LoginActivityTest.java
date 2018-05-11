@@ -3,7 +3,7 @@ package com.reeuse.androidtesting;
 import android.support.test.rule.ActivityTestRule;
 import android.test.suitebuilder.annotation.LargeTest;
 
-import com.reeuse.androidtesting.view.activities.LoginActivity;
+import com.reeuse.androidtesting.view.activity.LoginActivity;
 
 import org.junit.Rule;
 import org.junit.Test;

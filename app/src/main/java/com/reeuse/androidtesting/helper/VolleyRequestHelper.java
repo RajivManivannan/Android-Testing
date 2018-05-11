@@ -15,8 +15,7 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.reeuse.androidtesting.app.AppConstants;
-import com.reeuse.androidtesting.utils.Logger;
-import com.reeuse.androidtesting.utils.LruBitmapCache;
+import com.reeuse.androidtesting.utils.LoggerUtils;
 
 import org.json.JSONObject;
 
@@ -29,7 +28,7 @@ import java.io.UnsupportedEncodingException;
  */
 public class VolleyRequestHelper {
 
-    private static final String TAG = Logger.makeLogTag(VolleyRequestHelper.class);
+    private static final String TAG = LoggerUtils.makeLogTag(VolleyRequestHelper.class);
 
 
     private Context context;
@@ -91,10 +90,10 @@ public class VolleyRequestHelper {
                                             true, errorResponse, null);
                             return;
                         } catch (UnsupportedEncodingException e) {
-                            Logger.e(TAG, e);
+                            LoggerUtils.e(TAG, e);
                         }
                     } else {
-                        Logger.e(TAG, requestName
+                        LoggerUtils.e(TAG, requestName
                                 + " Cache does not exist");
                     }
                 }
@@ -109,7 +108,7 @@ public class VolleyRequestHelper {
                         errorResponse = "Unknown";
                     }
                 } catch (Exception e) {
-                    Logger.e(TAG, e);
+                    LoggerUtils.e(TAG, e);
                 }
                 mRequestCompletedListener.onRequestCompleted(
                         requestName, false, null,
